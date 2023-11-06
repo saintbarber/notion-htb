@@ -31,7 +31,6 @@ NOTION_API_URL_DATABASES = os.getenv("NOTION_API_URL_DATABASES")
 NOTION_API_KEY = os.getenv("NOTION_API_KEY")
 HTB_TOKEN = os.getenv("HTB_TOKEN")
 HTB_URL = os.getenv("HTB_URL")
-PAGE_ID    = os.getenv("PAGE_ID")
 DATABASE_ID    = os.getenv("DATABASE_ID")
 
 notion_auth = {

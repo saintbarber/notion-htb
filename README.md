@@ -75,3 +75,4 @@ python3 notion-htb.py -sa --update
 
 - Auto increment pagination when fetching all retired boxes
 - Implement option to add speicif box either using the box id or name
+- Add screenshots to readme

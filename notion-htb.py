@@ -8,19 +8,18 @@ load_dotenv()
 
 parser = argparse.ArgumentParser(description='Notion HTB integration script',formatter_class=argparse.RawDescriptionHelpFormatter)
 
-# parser.add_argument('-d','--database-id',                      help='Database ID - Takes higher priority then value in .env file')
-# parser.add_argument('-p','--page-id',                          help='Page ID - Takes higher priority then value in .env file')
-parser.add_argument('-a','--active',      action='store_true', help='Get only active machines')
-parser.add_argument('-r','--retired',     action='store_true', help='Get only retired machines')
-parser.add_argument('-s','--scheduled',   action='store_true', help='Get scheduled for release machines')
+parser.add_argument('-a','--active',      action='store_true', help='Add active machines')
+parser.add_argument('-r','--retired',     action='store_true', help='Add retired machines')
+parser.add_argument('-s','--scheduled',   action='store_true', help='Add scheduled for release machines')
 parser.add_argument('-u','--update',      action='store_true', help='Update notion database to reflect any HTB changes')
-parser.add_argument('-t','--todo',        action='store_true', help='Get only todo boxes from HTB')
+# parser.add_argument('-t','--todo',      action='store_true', help='Get only todo boxes from HTB') 
+parser.add_argument('-b','--box', help='Add specific box, use either ID or Box name') # TODO: Implement this
 parser.add_argument('-v', '--verbose',    action='store_true', help='Enable verbose mode')
 
 parser.epilog = f"""
 Example usages:
-  python3 {sys.argv[0]} -sar                # Get everything
-  python3 {sys.argv[0]} --update --active   # Update only active machines
+  python3 {sys.argv[0]} -sar                # Add everything
+  python3 {sys.argv[0]} --update --active   # Add active machines and then update notion database
 """
 
 args = parser.parse_args()

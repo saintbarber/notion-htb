@@ -24,7 +24,7 @@ https://saintbarber.notion.site/2f7f79b7c53449ac9562464bc6f1a33b?v=73040b7552364
 
 Click duplicate
 
-Once you have places the database within notion locate the database ID in the URL:
+Once you have placed the database within notion locate the database ID in the URL:
 
 [Show datbase ID in URL]
 

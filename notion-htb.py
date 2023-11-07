@@ -356,24 +356,5 @@ if __name__ == "__main__":
 
         update_notion_boxes(notion_id_sets, total, 0)
 
-    
-    # if(args.update):
-    #     print("Updating...")
-
-    #     if(args.active):
-    #         # Update active machines
-    #         update_active_machines()
-    # --update 
-    # If box exists in db ask if they mean to --update it or if they want to continue (adds duplicate)
-
-    ## Update flag only gets current machines in DB and checks for changes with HTB
-    ## e.g. User owns, Root owns, machine rating, machine in todo - Unreleased machines -> Active, Active machine -> retired
-
-    # Create update property method, that will get called with the property to update and the value
-
     print("\nFinished")
 
-
-# NO dont prompt if they want to --update, of course they dont want duplicates
-# -a fetches all active machines from HTB, if they have the box already, then skip said box - same with unrelased and retired
-# update command will only look at boxes already in DB and reflect possible changes from HTB
